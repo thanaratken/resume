@@ -209,3 +209,15 @@ ul li::before {
 .tech-tag.docker { background-color: #e3f2fd; border-color: #1d63ed; color: #0d47a1; }
 .tech-tag.aws { background-color: #fff8e1; border-color: #ff9900; color: #c46800; }
 .tech-tag.gcloud { background-color: #e3f2fd; border-color: #4285F4; color: #1a73e8; }
+
+.left-column .card + .card,
+.right-column .card + .card {
+    margin-top: 20px; /* ปรับตามที่อยากได้ */
+}
+
+@media (max-width: 768px) {
+  .left-column .card + .card,
+  .right-column .card + .card {
+    margin-top: 15px;
+  }
+}

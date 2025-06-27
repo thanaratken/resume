@@ -30,9 +30,10 @@ body {
 header {
     background-color: var(--header-bg);
     padding: 30px 40px;
-    border-radius: 12px;
+    /* ทำให้ Header ไม่มีขอบมนด้านล่าง เพื่อให้ติดกับ Card แรกพอดี */
+    border-radius: 12px 12px 0 0; 
     text-align: left;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px;  <-- ลบระยะห่างด้านล่างออก */
     box-shadow: var(--shadow);
 }
 
@@ -54,16 +55,15 @@ header .subtitle {
 .profile-grid {
     display: grid;
     grid-template-columns: 1fr;
-    /* กำหนดช่องว่างแนวตั้งระหว่าง Card */
-    row-gap: 40px; 
+    /* ลบช่องว่างออกทั้งหมด */
+    row-gap: 0; 
 }
 
 @media (min-width: 992px) {
     .profile-grid {
         grid-template-columns: repeat(2, 1fr);
         align-items: start;
-        /* กำหนดช่องว่างแนวนอนระหว่าง Column */
-        column-gap: 40px; 
+        column-gap: 0;
     }
 }
 /* --- จบส่วนแก้ไข --- */
@@ -72,11 +72,20 @@ header .subtitle {
 .card {
     background-color: var(--card-bg);
     padding: 30px;
-    border-radius: 12px;
+    /* ทำให้ Card ไม่มีขอบมนเลย เพื่อให้ติดกันสนิท */
+    border-radius: 0; 
     box-shadow: var(--shadow);
     position: relative;
     overflow: hidden;
+    border-top: 1px solid #f0f4f8; /* เพิ่มเส้นคั่นบางๆ ระหว่าง Card */
 }
+
+/* ทำให้ Card อันสุดท้ายของแต่ละคอลัมน์มีขอบมนด้านล่าง */
+.left-column .card:last-child,
+.right-column .card:last-child {
+    border-radius: 0 0 12px 12px;
+}
+
 
 .card h2 {
     margin-top: 0;
@@ -169,8 +178,6 @@ ul li::before {
 .social-link.instagram { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
 .social-link.linkedin { background-color: #0A66C2; }
 
-
-/* --- CSS ใหม่สำหรับ Tech Stack --- */
 .tech-category {
     margin-bottom: 20px;
 }
@@ -195,7 +202,6 @@ ul li::before {
     font-weight: 500;
     border: 1px solid #dee2e6;
 }
-/* Optional: Custom colors for specific tags */
 .tech-tag.ts { background-color: #e6f3ff; border-color: #007acc; color: #005f9e; }
 .tech-tag.flutter { background-color: #e0f7fa; border-color: #0277bd; color: #014c8c; }
 .tech-tag.laravel { background-color: #ffebeb; border-color: #fd4f31; color: #b72a15; }
@@ -203,4 +209,3 @@ ul li::before {
 .tech-tag.docker { background-color: #e3f2fd; border-color: #1d63ed; color: #0d47a1; }
 .tech-tag.aws { background-color: #fff8e1; border-color: #ff9900; color: #c46800; }
 .tech-tag.gcloud { background-color: #e3f2fd; border-color: #4285F4; color: #1a73e8; }
-/* --- จบส่วน Tech Stack --- */

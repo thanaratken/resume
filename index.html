@@ -3,144 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Thanarat Ketyoungyunwong's Profile</title>
+    <title>Thanarat Ketyoungyunwong | Full-Stack Developer</title>
 
+    <!-- Google Fonts: Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <div class="container">
-        <header data-aos="fade-down" data-aos-duration="1000">
+    <!-- HERO -->
+    <header class="hero">
+        <div class="hero-content hidden">
             <h1>THANARAT KETYOUNGYUNWONG</h1>
-            <p class="subtitle">Full-stack developer in Thailand | Web, Mobile, Docker</p>
-        </header>
+            <p class="subtitle">Full-Stack Developer | Crafting Digital Solutions with Code</p>
+            <div class="social-links">
+                <a href="https://github.com/thanaratken" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:thanarat.ke@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </header>
 
-        <main class="profile-grid">
-            <div class="left-column">
-                <section class="card" data-aos="fade-right" data-aos-delay="200">
-                    <div class="card-header-icon about-me"></div>
-                    <h2>ABOUT ME</h2>
-                    <ul class="icon-list">
-                        <li><i class="fas fa-briefcase"></i> Currently working on Fin Go Go Application – A full-featured taxi service app with real-time ride requests, driver location tracking, and integrated payment system.</li>
-                        <li><i class="fas fa-laptop-code"></i> I'm currently learning Golang and Kubernetes for backend and DevOps.</li>
-                        <li><i class="fab fa-github"></i> All of my projects are available at <a href="https://github.com/thanaratken" target="_blank">github.com/thanaratken</a></li>
-                        <li><i class="fas fa-envelope"></i> How to reach me: <a href="mailto:thanarat.ke@gmail.com">thanarat.ke@gmail.com</a></li>
+    <main>
+        <!-- ABOUT -->
+        <section id="about" class="container">
+            <h2 class="section-title hidden">About Me</h2>
+            <div class="about-content hidden">
+                <div class="about-text">
+                    <p>
+                        A passionate Full-Stack Developer from Thailand with a strong focus on building high-quality web and mobile applications. I thrive on solving complex problems and continuously learning new technologies to enhance my skill set.
+                    </p>
+                    <ul>
+                        <li><i class="fas fa-briefcase"></i> Currently working on the <strong>Fin Go Go Application</strong>, a full-featured taxi service app.</li>
+                        <li><i class="fas fa-laptop-code"></i> Expanding my expertise in <strong>Golang</strong> and <strong>Kubernetes</strong> for robust backend and DevOps solutions.</li>
+                        <li><i class="fas fa-lightbulb"></i> My goal is to develop efficient, scalable, and user-friendly applications that make a difference.</li>
                     </ul>
-                </section>
-                
-                <section class="card" data-aos="fade-right" data-aos-delay="300">
-                    <div class="card-header-icon experience"></div>
-                    <h2>EXPERIENCE</h2>
-                    <div class="job">
-                        <h3>ORANGE TECHNOLOGY SOLUTION COMPANY LIMITED</h3>
-                        <p class="job-title"><strong>Programmer</strong> | June 2021 - Present</p>
-                    </div>
-                    <div class="job">
-                        <h3>TELEINFO MEDIA PUBLIC COMPANY LIMITED.</h3>
-                        <p class="job-title"><strong>Intern</strong> | November 2020 - March 2021</p>
-                    </div>
-                </section>
-                
-                <section class="card" data-aos="fade-right" data-aos-delay="400">
-                    <div class="card-header-icon projects"></div>
-                    <h2>SELECTED PROJECTS</h2>
-                     <ul>
-                        <li><strong>Daikyo ERP Website</strong> – Web-based ERP system for internal business management</li>
-                        <li><strong>FaStation Web</strong> – Online learning platform with video courses and user progress tracking</li>
-                        <li><strong>Precision Slitting Center ERP</strong> – ERP system for managing product in/out flow, job order creation, and billing processes in an industrial setting.</li>
-                        <li><strong>Summit ERP</strong> – Full-featured ERP system for business operations management</li>
-                        <li><strong>Legardy Application</strong> – Mobile app for legal consultation and lawyer-client communication</li>
-                        <li><strong>Big C Smart Scan</strong> – Internal scanning solution for Big C Supercenter operations</li>
-                        <li><strong>Mitsu Heavy One Click Application</strong> – Technician scheduling and service app for Mitsubishi Heavy</li>
-                        <li><strong>Padudeer Application</strong> – Internal parcel and logistics delivery system for corporate use</li>
-                        <li><strong>Fin Go Go</strong> – Taxi service app with real-time ride matching and payment integration</li>
-                     </ul>
-                </section>
+                </div>
+                <div class="about-education">
+                    <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+                    <p>
+                        <strong>Rajamangala University of Technology Phra Nakhon</strong><br>
+                        Bachelor's Degree in Computer Science<br>
+                        (2017 - 2020)
+                    </p>
+                </div>
             </div>
+        </section>
 
-            <div class="right-column">
-                <section class="card" data-aos="fade-left" data-aos-delay="200">
-                    <div class="card-header-icon education"></div>
-                    <h2>EDUCATION</h2>
-                    <p><strong>RAJAMANGALA UNIVERSITY OF TECHNOLOGY PHRA NAKHON</strong></p>
-                    <p>Bachelor Degrees | 2017-2020</p>
-                    <p>Computer Science</p>
-                </section>
-                
-                <section class="card" data-aos="fade-left" data-aos-delay="300">
-                    <div class="card-header-icon socials"></div>
-                    <h2>SOCIALS</h2>
-                    <div class="socials-container">
-                        <a href="#" class="social-link facebook">Facebook</a>
-                        <a href="#" class="social-link instagram">Instagram</a>
-                        <a href="#" class="social-link linkedin">LinkedIn</a>
+        <!-- SKILLS -->
+        <section id="skills" class="container">
+            <h2 class="section-title hidden">Tech Stack</h2>
+            <div class="skills-grid">
+                <div class="skill-category hidden">
+                    <h3><i class="fas fa-desktop"></i> Frontend & Mobile</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Flutter</span> <span class="skill-tag">Vue.js</span> <span class="skill-tag">JavaScript (ES6+)</span> <span class="skill-tag">TypeScript</span> <span class="skill-tag">HTML5</span> <span class="skill-tag">CSS3</span>
                     </div>
-                </section>
-
-                <section class="card" data-aos="fade-left" data-aos-delay="400">
-                     <div class="card-header-icon tech-stack"></div>
-                     <h2>TECH STACK</h2>
-                     
-                     <div class="tech-category">
-                        <h4>Frontend & Mobile</h4>
-                        <div class="tech-stack-container">
-                           <span class="tech-tag flutter">Flutter</span>
-                           <span class="tech-tag vue">Vue.js</span>
-                           <span class="tech-tag js">JavaScript</span>
-                           <span class="tech-tag ts">Typescript</span>
-                           <span class="tech-tag html">HTML5</span>
-                        </div>
-                     </div>
-                     
-                     <div class="tech-category">
-                        <h4>Backend & Database</h4>
-                        <div class="tech-stack-container">
-                            <span class="tech-tag go">Go</span>
-                            <span class="tech-tag php">PHP</span>
-                            <span class="tech-tag nest">NestJS</span>
-                            <span class="tech-tag laravel">Laravel</span>
-                            <span class="tech-tag node">Node.js</span>
-                            <span class="tech-tag socket-io">Socket.io</span>
-                            <span class="tech-tag postgres">Postgres</span>
-                            <span class="tech-tag mysql">MySQL</span>
-                            <span class="tech-tag redis">Redis</span>
-                        </div>
-                     </div>
-
-                     <div class="tech-category">
-                        <h4>DevOps & Tools</h4>
-                        <div class="tech-stack-container">
-                           <span class="tech-tag nginx">Nginx</span>
-                           <span class="tech-tag apache">Apache</span>
-                           <span class="tech-tag docker">Docker</span>
-                           <span class="tech-tag gcloud">GoogleCloud</span>
-                           <span class="tech-tag aws">AWS</span>
-                           <span class="tech-tag github">GitHub</span>
-                           <span class="tech-tag gitlab">GitLab</span>
-                           <span class="tech-tag figma">Figma</span>
-                           <span class="tech-tag postman">Postman</span>
-                           <span class="tech-tag yarn">Yarn</span>
-                        </div>
-                     </div>
-                </section>
+                </div>
+                <div class="skill-category hidden">
+                    <h3><i class="fas fa-server"></i> Backend & Database</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Node.js</span> <span class="skill-tag">NestJS</span> <span class="skill-tag">Laravel</span> <span class="skill-tag">PHP</span> <span class="skill-tag">Go</span> <span class="skill-tag">Socket.io</span> <span class="skill-tag">PostgreSQL</span> <span class="skill-tag">MySQL</span> <span class="skill-tag">Redis</span>
+                    </div>
+                </div>
+                <div class="skill-category hidden">
+                    <h3><i class="fas fa-cogs"></i> DevOps & Tools</h3>
+                    <div class="skills-list">
+                        <span class="skill-tag">Docker</span> <span class="skill-tag">Kubernetes</span> <span class="skill-tag">Nginx</span> <span class="skill-tag">AWS</span> <span class="skill-tag">Google Cloud</span> <span class="skill-tag">Git & GitHub</span> <span class="skill-tag">Figma</span> <span class="skill-tag">Postman</span>
+                    </div>
+                </div>
             </div>
-        </main>
-    </div>
+        </section>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <!-- EXPERIENCE -->
+        <section id="experience" class="container">
+            <h2 class="section-title hidden">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item left hidden">
+                    <div class="timeline-content">
+                        <h3>Programmer</h3>
+                        <p><strong>Orange Technology Solution Co., Ltd.</strong></p>
+                        <span class="date"><i class="far fa-calendar-alt"></i> June 2021 - Present</span>
+                    </div>
+                </div>
+                <div class="timeline-item right hidden">
+                    <div class="timeline-content">
+                        <h3>Intern</h3>
+                        <p><strong>Teleinfo Media Public Co., Ltd.</strong></p>
+                        <span class="date"><i class="far fa-calendar-alt"></i> Nov 2020 - Mar 2021</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="container">
+             <h2 class="section-title hidden">Selected Projects</h2>
+             <div class="projects-grid">
+                <div class="project-card hidden">
+                    <div class="project-content">
+                        <h3>Fin Go Go</h3>
+                        <p>A taxi service app with real-time ride matching and integrated payments.</p>
+                    </div>
+                </div>
+                <div class="project-card hidden">
+                    <div class="project-content">
+                        <h3>Daikyo ERP Website</h3>
+                        <p>Web-based ERP system for managing internal business operations.</p>
+                    </div>
+                </div>
+                <div class="project-card hidden">
+                    <div class="project-content">
+                        <h3>Legardy Application</h3>
+                        <p>Mobile platform for legal consultation and lawyer-client communication.</p>
+                    </div>
+                </div>
+                 <div class="project-card hidden">
+                    <div class="project-content">
+                        <h3>FaStation Web</h3>
+                        <p>Online learning platform with video courses and user progress tracking.</p>
+                    </div>
+                </div>
+                <div class="project-card hidden">
+                    <div class="project-content">
+                        <h3>Mitsu Heavy One Click App</h3>
+                        <p>Technician scheduling and service application for Mitsubishi Heavy.</p>
+                    </div>
+                </div>
+                <div class="project-card hidden">
+                    <div class="project-content">
+                        <h3>Big C Smart Scan</h3>
+                        <p>Internal scanning and inventory solution for Big C Supercenter operations.</p>
+                    </div>
+                </div>
+             </div>
+        </section>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer container">
+        <div class="footer-content hidden">
+            <div class="social-links" style="margin-bottom: 1rem;">
+                <a href="https://github.com/thanaratken" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:thanarat.ke@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p>Designed & Built by Thanarat Ketyoungyunwong</p>
+            <p>&copy; 2024. All rights reserved.</p>
+        </div>
+    </footer>
+
     <script>
-        AOS.init({
-            once: true // Animation will happen only once
+        // --- INTERSECTION OBSERVER FOR SCROLL ANIMATIONS ---
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                } 
+                // Optional: To make animation repeat every time it scrolls into view
+                // else {
+                //     entry.target.classList.remove('show');
+                // }
+            });
+        }, {
+            threshold: 0.1 // Trigger when 10% of the element is visible
         });
-    </script>
 
+        const hiddenElements = document.querySelectorAll('.hidden');
+        hiddenElements.forEach((el) => observer.observe(el));
+    </script>
 </body>
 </html>
